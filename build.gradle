@@ -1,0 +1,47 @@
+buildscript {
+    ext.java_version = '11'
+    ext.kotest_version = '4.1.2'
+    ext.log4j_version = '1.2.17'
+    ext.slf4j_version = '1.7.5'
+    ext.commons_io_version = '2.7'
+}
+
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.3.72'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "log4j:log4j:$log4j_version"
+    implementation "org.slf4j:slf4j-api:$slf4j_version"
+    implementation "org.slf4j:slf4j-log4j12:$slf4j_version"
+
+    implementation ("net.sourceforge.tess4j:tess4j:4.5.2")  {
+        exclude group: 'ch.qos.logback', module: 'logback-classic'
+    }
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.1.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.1.1'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+compileKotlin {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+compileTestKotlin {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
