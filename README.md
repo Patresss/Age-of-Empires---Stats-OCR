@@ -6,18 +6,18 @@ Application for conversion of images with Age f Empires 2 stats into machine-enc
 ```
 directory
 └───Aztecs
-│   │   sortedImagedWithScore1.jpg
-│   │   sortedImagedWithMilitary1.jpg
-│   │   sortedImagedWithEconomy1.jpg
-│   │   sortedImagedWithTechnology1.jpg
-│   │   sortedImagedWithSociety1.jpg
-│   │   sortedImagedWithTimeline1.jpg
-│   │   sortedImagedWithScore2.jpg
-│   │   sortedImagedWithMilitary2.jpg
-│   │   sortedImagedWithEconomy2.jpg
-│   │   sortedImagedWithTechnology2.jpg
-│   │   sortedImagedWithSociety2.jpg
-│   │   sortedImagedWithTimeline2.jpg
+│   │   sortedDateImagedWithScore1.jpg
+│   │   sortedDateImagedWithMilitary1.jpg
+│   │   sortedDateImagedWithEconomy1.jpg
+│   │   sortedDateImagedWithTechnology1.jpg
+│   │   sortedDateImagedWithSociety1.jpg
+│   │   sortedDateImagedWithTimeline1.jpg
+│   │   sortedDateImagedWithScore2.jpg
+│   │   sortedDateImagedWithMilitary2.jpg
+│   │   sortedDateImagedWithEconomy2.jpg
+│   │   sortedDateImagedWithTechnology2.jpg
+│   │   sortedDateImagedWithSociety2.jpg
+│   │   sortedDateImagedWithTimeline2.jpg
 │   │   ...
 └───Berbers
 │   │   ...
