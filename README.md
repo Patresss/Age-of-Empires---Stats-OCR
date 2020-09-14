@@ -64,16 +64,16 @@ The program will use:
 ![](https://github.com/Patresss/Age-of-Empires---Stats-OCR/blob/master/examples/test%20Society%20PLAYER1%203%20-%20null.png)
 - Low-level binarized image: 
 ![](https://github.com/Patresss/Age-of-Empires---Stats-OCR/blob/master/examples/test%20Society%20PLAYER1%203%20-%20115.png)
-- Medium-degree binarized image: 
+- Medium-level binarized image: 
 ![](https://github.com/Patresss/Age-of-Empires---Stats-OCR/blob/master/examples/test%20Society%20PLAYER1%203%20-%20200.png)
-- Highly binarized image: 
+- High-level binarized image: 
 ![](https://github.com/Patresss/Age-of-Empires---Stats-OCR/blob/master/examples/test%20Society%20PLAYER1%203%20-%20300.png)
 
 If OCR returns other results, for example 
 - `3995` - Color picture,
 - `3995` - Low-level binarized image,
-- `3995` - Medium-degree binarized image,
-- `3998` - Highly binarized image.
+- `3995` - Medium-level binarized image,
+- `3998` - High-level binarized image.
 
 This will return `FIXME [3995, 3998]` .
 
