@@ -70,11 +70,11 @@ The program will use:
 ![](https://github.com/Patresss/Age-of-Empires---Stats-OCR/blob/master/examples/test%20Society%20PLAYER1%203%20-%20300.png)
 
 If OCR returns other results, for example 
-- `7` - Color picture,
-- `7` - Low-level binarized image,
-- `7` - Medium-degree binarized image,
-- `1` - Highly binarized image.
-This will return `FIXME [1, 7]` .
+- `3995` - Color picture,
+- `3995` - Low-level binarized image,
+- `3995` - Medium-degree binarized image,
+- `3998` - Highly binarized image.
+This will return `FIXME [3995, 3998]` .
 
 However, I noticed that when the program returns different results, sometimes only one character out of a pair (or list) of characters is correct.
 * If `0` or `6` then `6`,
