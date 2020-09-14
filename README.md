@@ -60,10 +60,15 @@ To have more control over the results, you can set a property:
 useOnlyColoredImage=true
 ```
 The program will use: 
-- Color picture,
-- Low-level binarized image,
-- Medium-degree binarized image,
-- Highly binarized image.
+- Color picture: 
+![](https://github.com/Patresss/Age-of-Empires---Stats-OCR/blob/master/examples/test%20Society%20PLAYER1%203%20-%20null.png)
+- Low-level binarized image: 
+![](https://github.com/Patresss/Age-of-Empires---Stats-OCR/blob/master/examples/test%20Society%20PLAYER1%203%20-%20115.png)
+- Medium-degree binarized image: 
+![](https://github.com/Patresss/Age-of-Empires---Stats-OCR/blob/master/examples/test%20Society%20PLAYER1%203%20-%20200.png)
+- Highly binarized image: 
+![](https://github.com/Patresss/Age-of-Empires---Stats-OCR/blob/master/examples/test%20Society%20PLAYER1%203%20-%20300.png)
+
 If OCR returns other results, for example 
 - `7` - Color picture,
 - `7` - Low-level binarized image,
