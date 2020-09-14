@@ -6,6 +6,9 @@ import java.awt.Color
 import java.time.LocalTime
 import java.time.format.DateTimeFormatter
 import kotlin.math.abs
+import kotlin.time.Duration
+import kotlin.time.ExperimentalTime
+import kotlin.time.milliseconds
 
 val logger = LoggerFactory.getLogger("ExtensionFunctions.kt")
 
@@ -44,5 +47,12 @@ fun String.toIntStringOrFixMe(): String {
 
 fun Color.isTheSameColor(other: Color, epsilon: Int): Boolean {
     return abs(this.red - other.red) < epsilon && abs(this.green - other.green) < epsilon && abs(this.blue - other.blue) < epsilon
+}
+
+@ExperimentalTime
+inline fun <R> executeAndMeasureTimeMillis(block: () -> R): Pair<R, Duration> {
+    val start = System.currentTimeMillis()
+    val result = block()
+    return result to (System.currentTimeMillis() - start).milliseconds
 }
 

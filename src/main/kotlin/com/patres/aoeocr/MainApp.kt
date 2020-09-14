@@ -1,17 +1,18 @@
 package com.patres.aoeocr
 
-import com.patres.aoeocr.rename.ImageFileRenamer
 import com.patres.aoeocr.settings.ApplicationSettings
 import com.patres.aoeocr.stats.converter.ExcelStatsCreator
 import com.patres.aoeocr.stats.model.Civilization
 import com.patres.aoeocr.stats.model.StatsType
+import org.slf4j.LoggerFactory
 import kotlin.time.ExperimentalTime
+
+private val logger = LoggerFactory.getLogger("MainApp")
 
 @ExperimentalTime
 fun main() {
 
     val applicationSettings = ApplicationSettings.loadFromResources()
-    val imageConverterSettings = applicationSettings.imageConverterSettings
 
     // ================================
     // RENAME
@@ -19,15 +20,28 @@ fun main() {
 
     // ================================
     // CREATE STATS
+    val excelStatsCreator = ExcelStatsCreator(applicationSettings)
 
     // CIV_1 vs CIV_2 with type
-    ExcelStatsCreator(applicationSettings).createStats(imageConverterSettings, Civilization.TEUTONS, Civilization.ITALIANS, StatsType.SOCIETY)
+    val stats = excelStatsCreator.createStats(Civilization.TEUTONS, Civilization.ITALIANS, StatsType.SOCIETY)
 
     // CIV_1 vs CIV_2
-    // ExcelStatsCreator(applicationSettings).createStats(imageConverterSettings, Civilization.SPANISH, Civilization.FRANKS)
+    // val stats = excelStatsCreator.createStats(Civilization.SPANISH, Civilization.FRANKS)
 
     // CIV_1 vs all
-    // ExcelStatsCreator(applicationSettings).createStats(imageConverterSettings, Civilization.VIKINGS)
+    // val stats = excelStatsCreator.createStats(Civilization.VIKINGS)
+
+    logger.info(
+        """ 
+Stats:
+==========================
+$stats
+==========================
+""".trimIndent()
+    )
+
 }
+
+
 
 
