@@ -74,6 +74,7 @@ If OCR returns other results, for example
 - `3995` - Low-level binarized image,
 - `3995` - Medium-degree binarized image,
 - `3998` - Highly binarized image.
+
 This will return `FIXME [3995, 3998]` .
 
 However, I noticed that when the program returns different results, sometimes only one character out of a pair (or list) of characters is correct.
