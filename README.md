@@ -1,5 +1,5 @@
 # Age of Empires - Stats OCR
-Application for conversion of images with Age f Empires 2 stats into machine-encoded text
+Application for conversion of images with Age of Empires 2 stats into machine-encoded text
 
 ## Steps
 1. Prepare a directory with images per Civilizations
